@@ -1,0 +1,1302 @@
+[
+  {
+    "factor_id": "base_001",
+    "qlib_expression": "Resi($close, 5)/$close",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_002",
+    "qlib_expression": "Std(Abs($close/Ref($close, 1)-1)*$volume, 5)/(Mean(Abs($close/Ref($close, 1)-1)*$volume, 5)+1e-12)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_003",
+    "qlib_expression": "Rsquare($close, 5)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_004",
+    "qlib_expression": "($high-$low)/$open",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_005",
+    "qlib_expression": "Rsquare($close, 10)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_006",
+    "qlib_expression": "Corr($close, Log($volume+1), 5)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_007",
+    "qlib_expression": "Corr($close/Ref($close,1), Log($volume/Ref($volume, 1)+1), 5)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_008",
+    "qlib_expression": "Corr($close, Log($volume+1), 10)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_009",
+    "qlib_expression": "Ref($close, 60)/$close",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_010",
+    "qlib_expression": "Resi($close, 10)/$close",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_011",
+    "qlib_expression": "Std($volume, 5)/($volume+1e-12)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_012",
+    "qlib_expression": "Rsquare($close, 60)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_013",
+    "qlib_expression": "Corr($close, Log($volume+1), 60)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_014",
+    "qlib_expression": "Std(Abs($close/Ref($close, 1)-1)*$volume, 60)/(Mean(Abs($close/Ref($close, 1)-1)*$volume, 60)+1e-12)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_015",
+    "qlib_expression": "Std($close, 5)/$close",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_016",
+    "qlib_expression": "Rsquare($close, 20)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_017",
+    "qlib_expression": "Corr($close/Ref($close,1), Log($volume/Ref($volume, 1)+1), 60)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_018",
+    "qlib_expression": "Corr($close/Ref($close,1), Log($volume/Ref($volume, 1)+1), 10)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_019",
+    "qlib_expression": "Corr($close, Log($volume+1), 20)",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "base_020",
+    "qlib_expression": "(Less($open, $close)-$low)/$open",
+    "metrics": {
+      "train": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 0
+  },
+  {
+    "factor_id": "fac_001_005_3941283e",
+    "qlib_expression": "Rank(Sum($volume, 20), 40)",
+    "metrics": {
+      "train": {
+        "ic": 0.023724285885691643,
+        "rank_ic": 0.02316969819366932,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 1
+  },
+  {
+    "factor_id": "fac_001_006_3eb74a4d",
+    "qlib_expression": "Div(Mean(Mean($volume, 40), 40), Std(Mean($volume, 40), 40))",
+    "metrics": {
+      "train": {
+        "ic": 0.023954026401042938,
+        "rank_ic": 0.02103668823838234,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 1
+  },
+  {
+    "factor_id": "fac_001_007_90f60b6b",
+    "qlib_expression": "Min(Div(Mean(WMA($volume, 20), 30), Std(WMA($volume, 20), 30)), 50)",
+    "metrics": {
+      "train": {
+        "ic": 0.023137623444199562,
+        "rank_ic": 0.018990924581885338,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 1
+  },
+  {
+    "factor_id": "fac_002_001_18902e4f",
+    "qlib_expression": "Div(Mean(Sum($volume, 50), 50), Std(Sum($volume, 50), 50))",
+    "metrics": {
+      "train": {
+        "ic": 0.022387797012925148,
+        "rank_ic": 0.03890315443277359,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 2
+  },
+  {
+    "factor_id": "fac_002_002_08c574d0",
+    "qlib_expression": "EMA(Corr($close, $low, 50), 40)",
+    "metrics": {
+      "train": {
+        "ic": 0.020162615925073624,
+        "rank_ic": 0.03464888036251068,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 2
+  },
+  {
+    "factor_id": "fac_002_005_1f7f0f46",
+    "qlib_expression": "WMA(Corr($close, $low, 40), 50)",
+    "metrics": {
+      "train": {
+        "ic": 0.020527474582195282,
+        "rank_ic": 0.029368514195084572,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 2
+  },
+  {
+    "factor_id": "fac_002_008_939a109d",
+    "qlib_expression": "Med(Corr($close, $low, 20), 50)",
+    "metrics": {
+      "train": {
+        "ic": 0.02176043763756752,
+        "rank_ic": 0.02534661814570427,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 2
+  },
+  {
+    "factor_id": "fac_002_010_8dd5b22f",
+    "qlib_expression": "Med(Corr($close, $low, 20), 40)",
+    "metrics": {
+      "train": {
+        "ic": 0.023873362690210342,
+        "rank_ic": 0.0208244901150465,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 2
+  },
+  {
+    "factor_id": "fac_003_001_df7041d4",
+    "qlib_expression": "Div(Mean(Sum($volume, 50), 40), Std(Sum($volume, 50), 40))",
+    "metrics": {
+      "train": {
+        "ic": 0.02193399891257286,
+        "rank_ic": 0.03340887650847435,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 3
+  },
+  {
+    "factor_id": "fac_003_007_9542e8a2",
+    "qlib_expression": "Div(Min($volume, 30), Mean($volume, 30))",
+    "metrics": {
+      "train": {
+        "ic": 0.021217303350567818,
+        "rank_ic": 0.019499382004141808,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 3
+  },
+  {
+    "factor_id": "fac_003_013_c09de50b",
+    "qlib_expression": "Div(Mean(Sum($volume, 30), 40), Std(Sum($volume, 30), 40))",
+    "metrics": {
+      "train": {
+        "ic": 0.023506365716457367,
+        "rank_ic": 0.01150769554078579,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 3
+  },
+  {
+    "factor_id": "fac_003_015_76529167",
+    "qlib_expression": "Div(Mean(Div(Mean($volume, 40), Std($volume, 40)), 50), Std(Div(Mean($volume, 40), Std($volume, 40)), 50))",
+    "metrics": {
+      "train": {
+        "ic": 0.020192066207528114,
+        "rank_ic": 0.008478705771267414,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 3
+  },
+  {
+    "factor_id": "fac_003_019_839aaf14",
+    "qlib_expression": "Div(Mean(Div($volume, Mean($volume, 10)), 40), Std(Div($volume, Mean($volume, 10)), 40))",
+    "metrics": {
+      "train": {
+        "ic": 0.023648062720894814,
+        "rank_ic": 0.0067501552402973175,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 3
+  },
+  {
+    "factor_id": "fac_004_001_86297a4f",
+    "qlib_expression": "Sub(EMA(Div($volume, Mean($volume, 30)), 20), Max(EMA(Div($volume, Mean($volume, 30)), 20), 10))",
+    "metrics": {
+      "train": {
+        "ic": 0.020736657083034515,
+        "rank_ic": 0.04492058977484703,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 4
+  },
+  {
+    "factor_id": "fac_004_002_bf92e953",
+    "qlib_expression": "Rank(Var($volume, 40), 40)",
+    "metrics": {
+      "train": {
+        "ic": 0.021865392103791237,
+        "rank_ic": 0.026906996965408325,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 4
+  },
+  {
+    "factor_id": "fac_004_003_5429493f",
+    "qlib_expression": "Corr($vwap, $close, 10)",
+    "metrics": {
+      "train": {
+        "ic": 0.02357180044054985,
+        "rank_ic": 0.016499310731887817,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 4
+  },
+  {
+    "factor_id": "fac_004_005_301cc793",
+    "qlib_expression": "Div(Mean(Div(1, $volume), 40), Std(Div(1, $volume), 40))",
+    "metrics": {
+      "train": {
+        "ic": 0.02495505101978779,
+        "rank_ic": 0.010791510343551636,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 4
+  },
+  {
+    "factor_id": "fac_004_007_ebb3e234",
+    "qlib_expression": "Div(Mean($volume, 30), Std($volume, 30))",
+    "metrics": {
+      "train": {
+        "ic": 0.030830349773168564,
+        "rank_ic": 0.006716918665915728,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 4
+  },
+  {
+    "factor_id": "fac_005_005_c82df172",
+    "qlib_expression": "Div(Mean(Div($volume, Mean($volume, 10)), 50), Std(Div($volume, Mean($volume, 10)), 50))",
+    "metrics": {
+      "train": {
+        "ic": 0.02223813720047474,
+        "rank_ic": 0.00513458251953125,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 5
+  },
+  {
+    "factor_id": "fac_005_006_3eec1c88",
+    "qlib_expression": "Div(Mean($volume, 20), Std($volume, 20))",
+    "metrics": {
+      "train": {
+        "ic": 0.023339739069342613,
+        "rank_ic": 0.0014478095108643174,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 5
+  },
+  {
+    "factor_id": "fac_005_007_29a20b70",
+    "qlib_expression": "Div(Mean($volume, 50), Std($volume, 50))",
+    "metrics": {
+      "train": {
+        "ic": 0.03607110679149628,
+        "rank_ic": -0.007275126874446869,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 5
+  },
+  {
+    "factor_id": "fac_005_012_510ebbb7",
+    "qlib_expression": "Mad(Div(Sub(Min($close, 30), Ref(Min($close, 30), 9)), Ref(Min($close, 30), 9)), 10)",
+    "metrics": {
+      "train": {
+        "ic": 0.022333092987537384,
+        "rank_ic": -0.0149111058562994,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 5
+  },
+  {
+    "factor_id": "fac_005_024_9d8ee96a",
+    "qlib_expression": "Mad(Mean(Min($close, 30), 40), 10)",
+    "metrics": {
+      "train": {
+        "ic": 0.023810286074876785,
+        "rank_ic": -0.029207751154899597,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 5
+  },
+  {
+    "factor_id": "fac_006_003_bfc394b9",
+    "qlib_expression": "Max(Rank($volume, 50), 10)",
+    "metrics": {
+      "train": {
+        "ic": 0.024047205224633217,
+        "rank_ic": 0.034519970417022705,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 6
+  },
+  {
+    "factor_id": "fac_006_005_743dd44b",
+    "qlib_expression": "Div(Mean(Div(1, $volume), 30), Std(Div(1, $volume), 30))",
+    "metrics": {
+      "train": {
+        "ic": 0.02164197340607643,
+        "rank_ic": 0.01800682581961155,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 6
+  },
+  {
+    "factor_id": "fac_006_014_b5253006",
+    "qlib_expression": "Div(Mean(Div(1, $volume), 50), Std(Div(1, $volume), 50))",
+    "metrics": {
+      "train": {
+        "ic": 0.021414753049612045,
+        "rank_ic": 0.012788983061909676,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 6
+  },
+  {
+    "factor_id": "fac_006_015_7770b68a",
+    "qlib_expression": "Corr($vwap, $close, 30)",
+    "metrics": {
+      "train": {
+        "ic": 0.02597961761057377,
+        "rank_ic": 0.011153371073305607,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 6
+  },
+  {
+    "factor_id": "fac_006_016_5736bef5",
+    "qlib_expression": "Div(Mean(EMA($volume, 30), 50), Std(EMA($volume, 30), 50))",
+    "metrics": {
+      "train": {
+        "ic": 0.026960764080286026,
+        "rank_ic": 0.011065579019486904,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 6
+  },
+  {
+    "factor_id": "fac_007_003_1ea20484",
+    "qlib_expression": "Div(Mean($open, 30), Mean($open, 20))",
+    "metrics": {
+      "train": {
+        "ic": 0.02065795660018921,
+        "rank_ic": 0.044720180332660675,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 7
+  },
+  {
+    "factor_id": "fac_007_007_2c6570a6",
+    "qlib_expression": "Rank(Mean($volume, 30), 30)",
+    "metrics": {
+      "train": {
+        "ic": 0.024383220821619034,
+        "rank_ic": 0.037846386432647705,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "valid": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      },
+      "test": {
+        "ic": 0.0,
+        "rank_ic": 0.0,
+        "icir": 0.0,
+        "rank_icir": 0.0
+      }
+    },
+    "economics_passed": true,
+    "round_index": 7
+  }
+]

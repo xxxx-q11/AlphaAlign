@@ -1,0 +1,64 @@
+# Docker 构建时忽略的文件和目录
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 输出和日志
+out_gp/
+out_ppo/
+out_gfn/
+out_aff/
+*.log
+*.pkl
+*.pth
+*.ckpt
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# 其他
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+.cache/
+.pytest_cache/
+
+# PDM
+.pdm.toml
+.pdm-python
+pdm.lock
+
+# 数据文件（如果有本地数据）
+data/
+*.csv
+*.parquet
+

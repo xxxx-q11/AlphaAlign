@@ -1,0 +1,122 @@
+# python main.py 在 LLM+GP 因子挖掘结束后使用的默认回测配置。
+# 下面的相对路径会按仓库根目录解析，例如 data/... 和 config/...。
+
+# Qlib 数据目录。设为 null 时，会按代码内置候选路径自动查找。
+provider_uri: null
+
+# 回测开始日期，格式为 YYYY-MM-DD。
+start_date: "2024-01-01"
+
+# 回测结束日期，格式为 YYYY-MM-DD。
+end_date: "2026-01-01"
+
+# 回测股票池，当前常用值为 csi300。
+instrument: csi300
+
+# 基准指数；csi300 会在回测服务中映射为 SH000300。
+benchmark: csi300
+
+# 策略目标持仓数量。
+topk: 50
+
+# topk_dropout 模式下每次调仓替换的股票数量；fixed_horizon 模式下仍保留给策略参数兼容使用。
+n_drop: 5
+
+# 组合构建方式：fixed_horizon 表示每日买入一组股票并持有固定天数。
+portfolio_mode: fixed_horizon
+
+# fixed_horizon 模式下，每组股票持有的交易日数量。
+holding_period_days: 10
+
+# fixed_horizon 模式下，每个交易日最多买入的股票数量。
+daily_buy_topk: 5
+
+# 评估单个因子近期表现时，使用前 top K 股票计算收益。
+factor_eval_top_k: 5
+
+# 非 MWU selector 下，每个滚动窗口选入的因子数量；selector_mode=mwu 时不作为截断数量，
+# MWU 会把可评估因子及其反向专家都纳入专家池，再由权重更新决定贡献。
+top_n: 10
+
+# 信号生成方式：rolling 表示每个窗口重新选择因子并计算权重。
+signal_mode: rolling
+
+# 滚动回测中每个调仓窗口覆盖的交易日数量。
+rebalance_window_days: 10
+
+# 因子筛选和权重学习使用的历史回看交易日数量。
+window_days: 90
+
+# 进入近期表现真实评估的候选因子数量；null 表示按 top_n 和因子库规模自动决定。
+recent_perf_candidate_limit: null
+
+# 近期表现评估时每批处理的因子数量。
+recent_perf_batch_size: 8
+
+# 滚动窗口因子选择器：mwu 表示使用 MWU 全专家选择逻辑。
+selector_mode: mwu
+
+# AFF 选择器使用的均值分数阈值；selector_mode=mwu 时通常不生效。
+selector_score_threshold: 0.02
+
+# AFF 选择器使用的信息比率阈值；selector_mode=mwu 时通常不生效。
+selector_ir_threshold: 0.2
+
+# 因子加权方法：mwu 表示使用 Multiplicative Weights Update。
+weighting_method: mwu
+
+# MWU 学习率，越大表示权重对近期收益反馈越敏感。
+mwu_learning_rate: 0.15
+
+# MWU 单日专家收益裁剪上限，避免极端收益主导权重更新。
+mwu_reward_cap: 0.05
+
+# MWU 探索率，用于向均匀权重混入少量先验，降低单一因子过度集中。
+mwu_explore_rate: 0.03
+
+# MWU 单个专家的最大权重上限。
+mwu_max_weight: 0.15
+
+# 是否启用新闻审核；开启后会在交易候选生成时调用新闻 LLM 审查。
+enable_news_review: false
+
+# 新闻数据目录或 JSON 文件路径；相对路径按仓库根目录解析。
+news_data_path: data/news_data/csi_300
+
+# 新闻审核时每批交给 LLM 的股票候选数量。
+news_batch_size: 10
+
+# 新闻审核候选池倍数；1 表示按目标买入数量的一倍候选池审查。
+news_candidate_pool_multiplier: 1
+
+# 新闻审核使用的 LLM 配置文件路径；相对路径按仓库根目录解析。
+news_llm_config_path: config/env.yaml
+
+# 新闻审核置信度阈值，达到该阈值后才执行 veto 等动作。
+news_confidence_threshold: 0.3
+
+# 回测初始资金。
+account: 100000000
+
+# 因子近期表现评估使用的未来收益表达式。
+return_expression: 'Ref($close, -11)/Ref($close, -1) - 1'
+
+# model 信号模式下标签的预测周期；signal_mode=model 时使用。
+model_label_horizon_days: 10
+
+# model 信号模式下训练标签表达式；signal_mode=model 时使用。
+model_label_expression: 'Ref($close, -11)/Ref($close, -1) - 1'
+
+# Qlib 交易撮合和费用参数。
+exchange_kwargs:
+  # 成交价格字段。
+  deal_price: close
+
+  # 买入手续费率。
+  open_cost: 0.0005
+
+  # 卖出手续费率。
+  close_cost: 0.0015
+
+  # 单笔最低交易费用。
+  min_cost: 5

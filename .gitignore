@@ -1,0 +1,36 @@
+# Python cache and local build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and editor files
+.env
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Factor library data (generated, not version-controlled)
+data/factor_library.json
+data/factor_library_metrics.json
+
+# Runtime outputs and generated data snapshots
+data/backtest_outputs/
+data/candidate_factors/
+data/mining_feedback/
+data/weighting_history/
+data/factor_value_cache/
+data/factor_correlation_heatmap/
+data/factor_correlation_heatmap_1/
+data/factor_correlation_heatmap_test_*/
+data/备份文件/
+mlruns/
+Qlib_MCP/workspace/AlphaSAGE/data/
+Qlib_MCP/workspace/AlphaSAGE/AlphaSAGE/
+
+# Secrets stay local; commit the example file instead
+config/env.yaml

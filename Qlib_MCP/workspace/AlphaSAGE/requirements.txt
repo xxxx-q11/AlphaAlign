@@ -1,0 +1,34 @@
+# AlphaSAGE 依赖包
+# 基于 pyproject.toml 生成
+
+# 核心依赖
+numpy==2.2.6
+jinja2>=3.1.6
+gymnasium>=1.2.0
+stable-baselines3>=2.7.0
+pandera>=0.25.0
+pyqlib>=0.9.6
+baostock>=0.8.9
+sb3-contrib>=2.7.0
+opencv-python>=4.11.0.86
+joblib==1.3.2
+tensorboard>=2.20.0
+tensorflow>=2.20.0
+seaborn>=0.13.2
+torchgfn>=1.2.1
+torch-geometric>=2.6.1
+xgboost>=3.0.5
+yahooquery>=2.4.1
+
+# PyTorch (CUDA 12.1 版本) - 在 Dockerfile 中单独安装
+# torch @ https://download.pytorch.org/whl/cu121/torch-2.4.0%2Bcu121-cp311-cp311-linux_x86_64.whl
+# torchvision @ https://download.pytorch.org/whl/cu121/torchvision-0.19.0%2Bcu121-cp311-cp311-linux_x86_64.whl
+# torchaudio @ https://download.pytorch.org/whl/cu121/torchaudio-2.4.0%2Bcu121-cp311-cp311-linux_x86_64.whl
+
+# 其他必要依赖
+pandas
+scipy
+scikit-learn
+matplotlib
+tqdm
+
